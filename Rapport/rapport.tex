@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{graphicx} 
+\usepackage{hyperref}  
+\usepackage{amsmath}  
+\usepackage{array}
+\usepackage{sectsty}  
+\usepackage{geometry}
+\usepackage{pseudocode}  
+\usepackage{analyseDescendante} 
+\usepackage{fancyhdr}
+
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+\lstset{
+  backgroundcolor=\color{pink},  %Choisissez la couleur que vous aimez ^^
+  basicstyle=\ttfamily\footnotesize,  
+  frame=single,                       
+  breaklines=true
+  language=C,                          
+}
+\pagestyle{fancy}
+\fancyfoot[C]{Cryptage sur courbes elliptiques}
+%Inclusion des packages custom
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\vspace{5mm}
+\includegraphics[width=0.4\textwidth]{./insa.eps}\\[1.0 cm]
+
+% Titre
+\HRule \\[0.4cm]
+{ \huge \bfseries Projet : Cryptage sur courbes elliptiques }\\[0.4cm]
+
+\HRule \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Auteurs:}\\
+Hamza \textsc{Fadili} \\
+Joachim \textsc{Curtelin} \\
+Reda \textsc{Bouzid} \\
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Enseignant:} \\
+Alexandrina \textsc{Rogozan} \\
+\end{flushright}
+\end{minipage}
+
+\vfill
+\end{center}
+\end{titlepage}
+
+
+\tableofcontents
+
+\include{introduction}
+\include{bibliographie}
+\include{algorithmes}
+\include{cryptanalyse}
+\include{conclusion}  
+
+\end{document}
+
